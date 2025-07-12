@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container .col{
+           height: 200px;
+           width: 200px;
+           border: 1px solid black; 
+           /* margin: 10px; */
+        }
+        .col2{
+            position: relative;
+            left:  100px;
+            top: -100px;
+            background-color: yellow;
+          
+        }
+        .col3{
+            position: relative;
+            top: -200px;
+            left: 200px;
+            background-color: green;
+        }
+        .col4{
+            background-color: yellowgreen;
+            position: relative;
+            top: -300px;
+            left: 300px;
+        }
+        #col2{
+              /* margin-left: 100px;
+            margin-top: -100px;
+            background-color: yellow; */
+        }
+        .col1{
+            background-color: orange;
+         
+        }
+/* .main{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin-left: 100px;
+} */
+ .column{
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(188, 183, 183);
+    margin: 10px;
+    border-radius: 5px;
+ }
+ .img{
+    /* border: 1px solid red; */
+    height: 240px ;
+ }
+ .content{
+    height: 50px ;
+    /* border: 1px solid orange; */
+    position: relative;
+    top: 5px;
+ }
+ .product-title h2{
+    /* background-color: yellow; */
+    position: relative;
+    top: -20px;
+    text-align: center;
+ }
+ .product-des {
+    /* background-color: yellowgreen; */
+    position: relative;
+    top: -40px;
+    text-align: center;
+    font-weight: bold;
+ }
+ #column1{
+    position: relative;
+    left: 310px;
+    top: -313px;
+ }
+  #column2{
+    position: relative;
+    left: 620px;
+    top: -625px;
+ }
+   #column3{
+    position: relative;
+    left: 930px;
+    top: -940px;
+ }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="col col1"></div>
+        <div class="col col2" id="col2"></div>
+        <div class="col col3"></div>
+        <div class="col col4"></div>
+    </div>
+
+        <!-- container-fluid start -->
+        <div class="container-fluid">
+            <!-- first Product start -->
+            <div class="column">
+                <div class="img"><img src="images/car1.jpg" alt=""></div>
+                <div class="content">
+                    <div class="product-title"><h2>Product Abc</h2></div>
+                    <div class="product-des">Rs:5000</div>
+                </div>
+            </div>
+            <!-- first product End -->
+          <div class="column" id="column1" >
+                <div class="img"><img src="images/car1.jpg" alt=""></div>
+                <div class="content">
+                    <div class="product-title"><h2>Product Abc</h2></div>
+                    <div class="product-des">Rs:5000</div>
+                </div>
+            </div>
+          <div class="column" id="column2">
+                <div class="img"><img src="images/car1.jpg" alt=""></div>
+                <div class="content">
+                    <div class="product-title"><h2>Product Abc</h2></div>
+                    <div class="product-des">Rs:5000</div>
+                </div>
+            </div>
+           <div class="column" id="column3">
+                <div class="img"><img src="images/car1.jpg" alt=""></div>
+                <div class="content">
+                    <div class="product-title"><h2>Product Abc</h2></div>
+                    <div class="product-des">Rs:5000</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- container-fluid end -->
+</body>
+</html>

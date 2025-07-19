@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
+        /* header css */
         header .container{
             height: 100px;
             border-bottom: 1px solid rgb(204, 194, 194);
@@ -21,6 +23,7 @@
         header .container .navbar .logo{
             height: inherit;
             width: 15%;
+            color: green;
             /* border: 1px solid green; */
         }
         header .container .navbar .nav{
@@ -46,6 +49,57 @@
                 padding: 10px;
                 margin-left: 15px;
         }
+        #gallery {
+            position: relative;
+        }
+        .dropdown{
+            position: absolute;
+            background-color: rgb(231, 231, 228);
+            left: 30px;
+            width: 100px;
+            padding: 10px;
+            display: none;
+        }
+        .dropdown .item{
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            padding-top: 3px;
+        }
+        #gallery:hover .dropdown{
+            display: block;
+        }
+        /* cover image css start */
+        #cover .background{
+                background: url("images/bg2.webp");
+                height: 600px;
+                /* width: 100%; */
+                background-size: cover; 
+                background-repeat: no-repeat;
+                 background-position: center; 
+                 /* background-attachment: fixed;   */
+                
+        }
+        /* #cover .background {
+            height: 600px;
+            background-image: linear-gradient(to top left , rgb(35, 35, 107) ,black
+            );
+        } */
+       #cover .background .col{
+                /* background-color: rgba(231, 231, 209,0.3); */
+                width: 30%;
+                padding: 10px;
+                position: relative;
+                top: 30%;
+                left: 5%;
+        }
+         #cover .background .col h1 {
+            text-align: center;
+            font-size: 55px;
+            /* color :white */
+         }     
+  #cover .background .col h1  span{
+    color: green;
+  }
     </style>
 
 </head>
@@ -61,7 +115,13 @@
                         <ul>
                             <li>Home</li>
                             <li>About</li>
-                            <li>Gallery</li>
+                            <li id="gallery">Gallery 
+                                <i class="fa fa-caret-down"></i>
+                                <div class="dropdown">
+                                    <div class="item">Indoor Plants</div>
+                                    <div class="item">Outdoor Plant</div>
+                                </div>
+                            </li>
                             <li>Policy</li>
                             <li>Contact</li>
                             <li>Faq</li>
@@ -71,5 +131,15 @@
             </div>
         </header>
     <!-- header end -->
+    <!-- cover image section start -->
+        <section id="cover">
+                <div class="background">
+                    <div class="col">
+                        <h1><span>welcome</span> TO Our Plant Nursery</h1>
+                    </div>
+                </div>
+        </section>
+     <!--  cover image section end -->
+
 </body>
 </html>

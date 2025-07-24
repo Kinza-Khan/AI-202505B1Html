@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        td{
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <table border="1px">
+             <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ali</td>
+                    <td>ali@gmail.com</td>
+                    <td>Karachi</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hassan</td>
+                    <td>hassan@gmail.com</td>
+                    <td>Lahore</td>
+                </tr>
+              <tr>
+                <td>3</td>
+                <td>Hamza</td>
+                <td>hamza@gmail.com</td>
+                <td>Karachi</td>
+              </tr>
+             </tbody>
+        </table>
+    </div>
+    <div class="container-fluid">
+        <table border="1PX">
+            <tbody>
+                <tr>
+                    <td colspan="4">0</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td rowspan="2">+</td>
+                </tr>
+                <tr>
+                    <td colspan="2">=</td>
+                    <!-- <td>B</td> -->
+                    <td>C</td>
+                    <!-- <td></td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

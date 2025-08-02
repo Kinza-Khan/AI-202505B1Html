@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class="container">
+                <input placeholder="Enter Your Name" type="text" id="studentName">
+                <button  onclick="printName()">Submit</button>     
+                <h1></h1>       
+        </div>
+
+            <script>
+        function  printName(){
+     let userName  = document.getElementById("studentName").value;
+         document.querySelector("h1").innerHTML = userName ;
+
+                } 
+               
+            </script>
+</body>
+</html>

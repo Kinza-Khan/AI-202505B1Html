@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="studentName"></h1>
+        <h2 id="studentAge"></h2>
+    </div>
+
+        <script>
+            let stdName = prompt("Enter your name");
+            let stdAge  = prompt("Enter your age");
+            document.querySelector('#studentName').innerHTML = stdName;
+            document.getElementById("studentAge").innerHTML = stdAge;
+        </script>
+</body>
+</html>
